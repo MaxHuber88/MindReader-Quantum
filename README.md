@@ -32,7 +32,7 @@ Welcome to the MindReader Quantum Mobile App! Originally created for the 2023 MI
 
 ## Getting Started
 
-To get started with the MindReader Quantum Mobile App, follow these steps:
+To get started with MindReader Quantum, follow these steps:
 
 1. Clone the repository to your local machine.
 
@@ -62,8 +62,10 @@ python app.py
 
 5. Open the Expo app on your mobile device and scan the QR code displayed by the frontend server to launch the app.
 
-Support and Feedback
+## Support and Feedback
+
 If you encounter any issues or have feedback, please don't hesitate to contact us at [support@email.com].
 
-Acknowledgments
+## Acknowledgments
+
 We would like to express our gratitude to the open-source community and the developers of the tools and technologies that made this project possible. Additionally, we extend our thanks to the healthcare professionals and researchers working tirelessly to improve the lives of those affected by Alzheimer's and dementia.
