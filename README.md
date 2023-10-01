@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Welcome to the MindReader Quantum Mobile App! Originally created for the 2023 MIT iQuHack hackathon, this application leverages cutting-edge technology to help healthcare professionals and caregivers detect stages of dementia using MRI images. Built with Flask, Expo, React Native, and powered by a Python backend, this app utilizes a Hybrid Model that employs Classical-to-Quantum transfer learning for improved accuracy in dementia classification.
+Welcome to the MindReader Quantum Mobile App! Originally created for the 2023 MIT iQuHack hackathon, this application leverages quantum-computing technology to help users determine stages of dementia using MRI images. Built with Flask, Expo, React Native, and powered by a Python backend, this app utilizes a Hybrid Classification Model that employs Classical-to-Quantum transfer learning for improved accuracy.
 
 ## Features
 
