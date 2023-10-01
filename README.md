@@ -1,6 +1,6 @@
 # MindReader Quantum
 
-![](./mindreader_quantum.JPG)
+![](./mindreader-quantum.JPG)
 
 ## Introduction
 
