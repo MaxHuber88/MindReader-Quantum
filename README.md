@@ -8,8 +8,6 @@ Welcome to the MindReader Quantum Mobile App! Originally created for the 2023 MI
 
 ## Features
 
-- **User Authentication**: Secure user registration and authentication for authorized access.
-
 - **MRI Image Upload**: Users can upload MRI images directly from their mobile devices.
 
 - **Hybrid Model**: The app utilizes a Hybrid Model that combines classical machine learning with quantum computing techniques for improved image classification.
@@ -30,6 +28,7 @@ Welcome to the MindReader Quantum Mobile App! Originally created for the 2023 MI
 
 - **Quantum Computing**:
   - PennyLane: An open-source quantum machine learning library used for quantum computing integration.
+  - PyTorch: A leading Python library for creating machine learning models.
 
 ## Getting Started
 
@@ -63,13 +62,8 @@ python app.py
 
 5. Open the Expo app on your mobile device and scan the QR code displayed by the frontend server to launch the app.
 
-Contributors
-[Your Name] - Lead Developer
-[Contributor 1] - Backend Developer
-[Contributor 2] - Frontend Developer
-[Contributor 3] - Quantum Computing Specialist
 Support and Feedback
 If you encounter any issues or have feedback, please don't hesitate to contact us at [support@email.com].
 
 Acknowledgments
-We would like to express our gratitude to the open-source community and the developers of the tools and technologies that made this project possible. Additionally, we extend our thanks to the healthcare professionals and researchers working tirelessly to improve the lives of those affected by dementia.
+We would like to express our gratitude to the open-source community and the developers of the tools and technologies that made this project possible. Additionally, we extend our thanks to the healthcare professionals and researchers working tirelessly to improve the lives of those affected by Alzheimer's and dementia.
