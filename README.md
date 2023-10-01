@@ -1,6 +1,6 @@
 # MindReader Quantum
 
-![MindReader Quantum Mobile App](./app_logo.png)
+![](./mindreader_quantum.JPG)
 
 ## Introduction
 
