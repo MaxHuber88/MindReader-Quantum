@@ -39,7 +39,7 @@ To get started with the MindReader Quantum Mobile App, follow these steps:
 
 2. Install the necessary dependencies for both the frontend and backend using `npm` and `pip`.
 
-   '''
+   ```bash
    # Frontend (inside the app's frontend directory)
    cd frontend
    npm install
@@ -47,19 +47,19 @@ To get started with the MindReader Quantum Mobile App, follow these steps:
    # Backend (inside the app's backend directory)
    cd backend
    pip install -r requirements.txt
-  '''
+   ```
 
 3. Configure your Flask backend to connect to the Hybrid Model and set up the database (if required).
 
 4. Start the development servers:
 
-'''
+```bash
 # Frontend (inside the app's frontend directory)
 npm start
 
 # Backend (inside the app's backend directory)
 python app.py
-'''
+```
 
 5. Open the Expo app on your mobile device and scan the QR code displayed by the frontend server to launch the app.
 
