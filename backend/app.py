@@ -13,15 +13,7 @@ cors = CORS(app)
 def image():
     if(request.method == "POST"):
         bytesOfImage = request.get_data()
-        with open('image.jpeg', 'wb') as out:
+        print(bytesOfImage)
+        with open('test.jpeg', 'wb') as out:
             out.write(bytesOfImage)
         return "Image read"
-
-
-@app.route("/video", methods=['GET', 'POST'])
-def video():
-    if(request.method == "POST"):
-        bytesOfVideo = request.get_data()
-        with open('video.mp4', 'wb') as out:
-            out.write(bytesOfVideo)
-        return "Video read"
