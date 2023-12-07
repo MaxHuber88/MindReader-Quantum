@@ -11,9 +11,15 @@ cors = CORS(app)
 
 @app.route("/image", methods=['GET', 'POST'])
 def image():
-    if(request.method == "POST"):
+    if request.method == "POST":
         bytesOfImage = request.get_data()
-        print(bytesOfImage)
+        print("RECEIVED POST REQUEST:")
+        print(bytesOfImage[:50], "...", bytesOfImage[-50:])
         with open('test.jpeg', 'wb') as out:
             out.write(bytesOfImage)
-        return "Image read"
+            out.close()
+        return "Image read", 200
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=True)
