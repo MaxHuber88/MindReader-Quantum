@@ -1,4 +1,5 @@
 from flask import Flask, Response, request, jsonify
+from generate_prediction import generate_prediction
 from io import BytesIO
 import base64
 from flask_cors import CORS, cross_origin
@@ -12,13 +13,25 @@ cors = CORS(app)
 @app.route("/image", methods=['GET', 'POST'])
 def image():
     if request.method == "POST":
-        bytesOfImage = request.get_data()
+        bytesOfImage = base64.decodebytes(request.get_data())
         print("RECEIVED POST REQUEST:")
-        print(bytesOfImage[:50], "...", bytesOfImage[-50:])
-        with open('test.jpeg', 'wb') as out:
+        with open('image.jpeg', 'wb') as out:
             out.write(bytesOfImage)
             out.close()
-        return "Image read", 200
+
+        print("GENERATING PREDICTION")
+        prediction = "No Prediction"
+
+        try:
+            prediction = generate_prediction("./image.jpeg")
+        except Exception as e:
+            print("Exception while generating prediction: ", e.__str__())
+            prediction = "Error"
+
+        prediction = prediction.replace("_"," ")
+        print("PREDICTION:",prediction)
+
+        return prediction, 200
 
 
 if __name__ == '__main__':

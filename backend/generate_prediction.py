@@ -44,6 +44,9 @@ def generate_prediction(img_path="./image.jpeg"):
     # Load Dataset for class_names
     # TODO: Clean this up
     class_names = get_class_names(load_dataset())
+    print("OUTPUT VEC:",output[0])
+    print("HOT INDEX:",preds[0])
+    print(class_names)
 
     # Return Model Prediction
     prediction = class_names[preds[0]]
